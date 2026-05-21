@@ -1,4 +1,5 @@
 /* creating staging for HCPs */
+/* refer to source tables from source.yml */
 
 {{ config(materialized='table') }}
 
