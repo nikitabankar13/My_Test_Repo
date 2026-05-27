@@ -5,7 +5,7 @@
 with source_data as (
 
     select hcp_npi,hcp_first_name||' '||hcp_last_name as hcp_name,hcp_zip,hcp_team,hcp_territory
-    from RAW.DRUG_SALES.LDG_HCP_DETAIL
+    from {{ source('raw_data_tables', 'LDG_HCP_DETAIL') }}
 
 )
 

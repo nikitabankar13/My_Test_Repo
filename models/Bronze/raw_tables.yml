@@ -1,0 +1,12 @@
+sources:
+  - name: raw_data_tables
+    description: "Raw data manually added"
+    database: raw    # Your database name
+    schema: drug_sales     # Your schema name
+    tables:
+      - name: LDG_HCP_DETAIL
+        description: "Raw hcp data"
+      - name: LDG_PTNT_DETAIL
+        description: "Raw patient data"
+      - name: LDG_TRX_DTL
+        description: "Raw trx data"
