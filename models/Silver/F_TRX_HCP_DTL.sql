@@ -9,12 +9,12 @@ with hcp as (
 ),
 trx as (
 
-    select * from RAW.DRUG_SALES.LDG_TRX_DTL
+    select * from {{ source('raw_data_tables', 'raw_trx') }}
 
 ),
 ptnt as (
 
-    select * from RAW.DRUG_SALES.LDG_PTNT_DETAIL
+    select * from {{ source('raw_data_tables', 'raw_ptnt') }}
 
 )
 
