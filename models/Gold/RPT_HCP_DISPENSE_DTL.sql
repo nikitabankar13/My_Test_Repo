@@ -24,3 +24,4 @@ from stg_hcp
 left outer join trx_hcp
 on (stg_hcp.hcp_npi = trx_hcp.hcp_npi)
 group by all)
+
